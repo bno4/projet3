@@ -1,0 +1,10 @@
+body {
+  margin: 0 auto !important;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=style.css.map */
