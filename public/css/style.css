@@ -1,3 +1,65 @@
+header,
+main,
+footer {
+  animation-name: opacity;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  margin: auto auto;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  border: 10px solid white;
+  border-top: 10px solid #9356DC;
+  border-bottom: 10px solid #FF79DA;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: spin 1s linear infinite forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0.2s;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+    transform: rotate 180deg;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0.2;
+    visibility: hidden;
+  }
+}
 body {
   max-width: 992px;
   margin: 0 auto !important;
@@ -8,6 +70,14 @@ body {
 header {
   display: flex;
   flex-direction: column;
+  margin: 0 auto !important;
+  box-shadow: 0px 10px 30px -10px #111;
+}
+
+.fonctionnement,
+.exploration,
+.list__restaurants {
+  margin: 0 20px;
 }
 
 header h1 {
@@ -21,22 +91,19 @@ footer {
   background-color: #232323;
   color: #fff;
   font-family: Roboto;
+  padding: 20px;
 }
 
 footer h1 {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "Shrikhand", cursive;
 }
 
 .location {
   background-color: #E5E5E5;
   text-align: center;
-}
-
-.logo {
-  margin: 30px auto;
-  text-align: center;
+  padding: 10px 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

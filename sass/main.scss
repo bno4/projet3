@@ -1,3 +1,5 @@
+@import "./components/loader";
+
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99e2d0;
@@ -13,6 +15,14 @@ body {
 header {
     display: flex;
     flex-direction: column;
+    margin: 0 auto !important;
+    box-shadow: 0px 10px 30px -10px #111;
+}
+
+.fonctionnement,
+.exploration,
+.list__restaurants {
+    margin: 0 20px;
 }
 
 header h1 {
@@ -26,20 +36,17 @@ footer {
     background-color: #232323;
     color: #fff;
     font-family: Roboto;
+    padding: 20px;
 }
 
 footer h1 {
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Shrikhand', cursive;
 }
 
 .location {
     background-color: #E5E5E5;
     text-align: center;
-}
-
-.logo {
-    margin: 30px auto;
-    text-align: center;
+    padding: 10px 0px
 }
