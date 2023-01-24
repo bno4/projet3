@@ -1,34 +1,44 @@
 @import "./utils/variables";
+@import "./base/base";
+@import "./base/typography";
 @import "./components/loader";
+@import "./utils/mixins";
+@import "./components/buttons";
 
-
-body {
-    max-width: 992px;
-    margin: 0 auto !important;
-    flex-direction: column;
-    justify-content: center;
-
-}
 
 header {
     margin: 0 0 5px 0;
-    padding: 30px 20px;
+    padding: 20px;
     box-shadow: 0px 5px 5px #999;
     background-color: $color-white;
 }
 
-.fonctionnement,
-.exploration,
-.list__restaurants {
-    margin: 0 20px;
+.exploration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    padding: 40px 30px;
+    background-color: $bg-color-secondary;
 }
 
-h1 {
+.fonctionnement,
+.list__restaurants {
+    padding: 20px;
+}
+
+header h1 {
     font-family: 'Shrikhand', cursive;
     color: black;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
 }
 
 .location {

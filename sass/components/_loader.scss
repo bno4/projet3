@@ -1,7 +1,7 @@
 header,
 main,
 footer {
-    animation: opacity 2s 1500ms forwards;
+    animation: opacity 2s 2000ms forwards;
     opacity: 0;
 }
 
@@ -28,7 +28,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: loader 5s 0ms forwards;
+    animation: loader 4s 0ms forwards;
 }
 
 @keyframes loader {
@@ -51,20 +51,20 @@ footer {
 .spinner>div {
     width: 28px;
     height: 28px;
-    background-color: $color-primary;
+    background-color: $color-main;
     border-radius: 100%;
     display: inline-block;
-    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.5s infinite ease-in-out both;
 }
 
 .spinner .bounce1 {
     animation-delay: -0.32s;
-    background-color: $color-tertiary;
+    background-color: $color-secondary;
 }
 
 .spinner .bounce2 {
     animation-delay: -0.16s;
-    background-color: #FF79DA;
+    background-color: $color-primary;
 }
 
 @keyframes sk-bouncedelay {

@@ -1,7 +1,53 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #fff;
+  max-width: 992px;
+  margin: 0 auto !important;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  font-style: normal;
+  color: #848484;
+}
+
+textarea {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
+}
+
 header,
 main,
 footer {
-  animation: opacity 2s 1500ms forwards;
+  animation: opacity 2s 2000ms forwards;
   opacity: 0;
 }
 
@@ -26,7 +72,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loader 5s 0ms forwards;
+  animation: loader 4s 0ms forwards;
 }
 
 @keyframes loader {
@@ -47,20 +93,20 @@ footer {
 .spinner > div {
   width: 28px;
   height: 28px;
-  background-color: #9356DC;
+  background-color: black;
   border-radius: 100%;
   display: inline-block;
-  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.5s infinite ease-in-out both;
 }
 
 .spinner .bounce1 {
   animation-delay: -0.32s;
-  background-color: #99e2d0;
+  background-color: #FF79DA;
 }
 
 .spinner .bounce2 {
   animation-delay: -0.16s;
-  background-color: #FF79DA;
+  background-color: #9356DC;
 }
 
 @keyframes sk-bouncedelay {
@@ -71,32 +117,61 @@ footer {
     transform: scale(1);
   }
 }
-body {
-  max-width: 992px;
-  margin: 0 auto !important;
-  flex-direction: column;
-  justify-content: center;
+.btn {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 290px;
+  border: 0px solid #FF79DA;
+  border-radius: 50px;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 1.3rem;
+  background: linear-gradient(-10deg, #9356DC, #FF79DA);
+  cursor: pointer;
+  transition: all 400ms;
+}
+.btn:hover {
+  background: linear-gradient(-10deg, #985ede 0%, #ff83dd 100%);
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+}
+.btn--full-width {
+  width: 100%;
+  margin: 0 auto;
 }
 
 header {
   margin: 0 0 5px 0;
-  padding: 30px 20px;
+  padding: 20px;
   box-shadow: 0px 5px 5px #999;
   background-color: #fff;
 }
 
-.fonctionnement,
-.exploration,
-.list__restaurants {
-  margin: 0 20px;
+.exploration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  padding: 40px 30px;
+  background-color: #F5F5F5;
 }
 
-h1 {
+.fonctionnement,
+.list__restaurants {
+  padding: 20px;
+}
+
+header h1 {
   font-family: "Shrikhand", cursive;
   color: black;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0 auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
 }
 
 .location {
