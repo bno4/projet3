@@ -18,15 +18,49 @@
         box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
     }
 
-    //bouttons section fonctionnement
+    //boutons section "fonctionnement"
     &__choix {
         display: flex;
         justify-content: flex-start;
+        align-items: center;
         background-color: $bg-color-secondary;
-        border-radius: 50px;
+        border-radius: 20px;
         width: 100%;
+        height: 80px;
         @include btn-shadow;
         border: 0px solid $bg-color-secondary;
-        padding: 20px;
+        padding: 20px 5px;
+        position: relative;
+        font-size: 1.2rem;
+
+        &:hover {
+            background-color: lighten($color-primary, 35%);
+            transition: all 500ms ease-in-out;
+        }
+
+        &:hover .fa-solid {
+            color: lighten($color-primary, 0%);
+            transition: all 500ms;
+        }
     }
+}
+
+.purple-dot {
+    display: inline-block;
+    background-color: $color-primary;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    color: $color-white;
+    line-height: 25px;
+    position: absolute;
+    left: -12.5px;
+    bottom: 33%;
+    font-size: 1.1rem;
+    padding: 0 5px;
+}
+
+.btn__choix .fa-solid {
+    color: $color-grey;
+    margin: 0 2px 0 15px;
 }
