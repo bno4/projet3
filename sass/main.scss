@@ -1,5 +1,6 @@
 @import "./utils/variables";
 @import "./base/base";
+@import "./pages/menu";
 @import "./base/typography";
 @import "./components/loader";
 @import "./utils/mixins";
@@ -7,11 +8,19 @@
 @import "./layout/card";
 
 
+
 header {
     margin: 0 0 5px 0;
     padding: 20px;
     box-shadow: 0px 3px 8px #999;
     background-color: $color-white;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: $color-secondary;
 }
 
 .exploration {
