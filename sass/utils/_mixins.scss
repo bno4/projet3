@@ -6,3 +6,112 @@
 @mixin btn-shadow {
     box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2);
 }
+
+@mixin choices {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    background-color: $color-white;
+    border-radius: 15px;
+    padding: 10px 20px;
+    @include btn-shadow;
+    opacity: 0;
+    animation: appear-y forwards ease-in-out;
+    animation-duration: 900ms;
+
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        padding-right: 10px;
+        overflow: hidden;
+        width: 90%;
+
+        h3 {
+            font-size: 1rem;
+            font-weight: 400;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        p {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+
+    &__price {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-weight: 400;
+        background-color: white;
+        position: absolute;
+        right: 0px;
+        height: 100%;
+        width: 8%;
+        top: 0;
+        padding: 10px;
+        border-radius: 0 15px 15px 0;
+        cursor: pointer;
+        transform: translateX(0);
+
+        &:hover:active {
+
+            animation: translateToLeft 500ms forwards;
+
+            &::after {
+                content: "";
+
+                animation: translateToLeft2 500ms forwards,
+            }
+        }
+    }
+
+    &__check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 8%;
+        height: 100%;
+        right: 0;
+        top: 0px;
+        border-radius: 0 15px 15px 0;
+        background-color: $color-tertiary;
+        z-index: -1;
+        transform: translateX(200px);
+
+        .fa-circle-check {
+            color: $color-white;
+            font-size: 1.2rem;
+        }
+
+    }
+}
+
+@keyframes translateToLeft {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(-50px);
+    }
+
+}
+
+@keyframes translateToLeft2 {
+    0% {
+        transform: translateX(-200px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
