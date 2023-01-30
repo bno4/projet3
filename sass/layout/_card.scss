@@ -1,5 +1,6 @@
 .card {
     width: 100%;
+    position: relative;
     max-width: 450px;
     background-color: white;
     border-radius: 20px;
@@ -16,6 +17,18 @@
     a {
         text-decoration: none;
         color: $color-main;
+    }
+
+    &__chip {
+        background: $color-tertiary;
+        color: darken($color-tertiary, 40%);
+        font-size: 1.2rem;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 5px 10px;
+        border-radius: 3px;
+        font-weight: 400;
     }
 }
 
@@ -57,4 +70,6 @@
             transition: all 200ms;
         }
     }
+
+
 }

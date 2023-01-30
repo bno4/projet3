@@ -94,3 +94,17 @@
         transform: translateY(0px);
     }
 }
+
+.commande {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    padding: 30px 30px;
+    background-color: $bg-color-secondary;
+}
+
+.btn {
+    min-width: 200px;
+}

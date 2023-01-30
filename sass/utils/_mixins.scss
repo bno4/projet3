@@ -22,6 +22,19 @@
     animation: appear-y forwards ease-in-out;
     animation-duration: 900ms;
 
+    &:hover .choice__price {
+        animation: anim-price 600ms forwards;
+    }
+
+    &:hover .choice__check {
+
+        animation: anim-check 600ms forwards;
+    }
+
+    &:hover .fa-circle-check {
+        transform: rotate(360deg);
+    }
+
 
     &__item {
         display: flex;
@@ -29,6 +42,8 @@
         padding-right: 10px;
         overflow: hidden;
         width: 90%;
+        cursor: pointer;
+
 
         h3 {
             font-size: 1rem;
@@ -43,6 +58,8 @@
             overflow: hidden;
             white-space: nowrap;
         }
+
+
     }
 
     &__price {
@@ -61,16 +78,8 @@
         cursor: pointer;
         transform: translateX(0);
 
-        &:hover:active {
 
-            animation: translateToLeft 500ms forwards;
 
-            &::after {
-                content: "";
-
-                animation: translateToLeft2 500ms forwards,
-            }
-        }
     }
 
     &__check {
@@ -78,37 +87,37 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        width: 8%;
+        width: 80px;
         height: 100%;
         right: 0;
         top: 0px;
         border-radius: 0 15px 15px 0;
         background-color: $color-tertiary;
-        z-index: -1;
-        transform: translateX(200px);
+        transform: translateX(80px);
 
         .fa-circle-check {
             color: $color-white;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
+            transition: all 600ms 100ms;
         }
 
     }
 }
 
-@keyframes translateToLeft {
+@keyframes anim-price {
     0% {
         transform: translateX(0px);
     }
 
     100% {
-        transform: translateX(-50px);
+        transform: translateX(-80px);
     }
 
 }
 
-@keyframes translateToLeft2 {
+@keyframes anim-check {
     0% {
-        transform: translateX(-200px);
+        transform: translateX(80px);
     }
 
     100% {
