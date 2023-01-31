@@ -1,4 +1,4 @@
-// boutton exploration et commande
+// boutons "exploration" et "fonctionnement" de la home, et "commande" des pages restos
 .btn {
     padding: 20px;
     margin: 0 auto;
@@ -23,6 +23,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        text-align: left;
         background-color: $bg-color-secondary;
         border-radius: 20px;
         width: 100%;
@@ -42,25 +43,34 @@
             color: lighten($color-primary, 0%);
             transition: all 300ms;
         }
+
+        &__txt {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+
+            .fa-solid {
+                display: inline-block;
+                color: $color-grey;
+                margin: 0 10px 0px 25px;
+            }
+
+        }
     }
-}
 
-.purple-dot {
-    display: inline-block;
-    background-color: $color-primary;
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    color: $color-white;
-    line-height: 25px;
-    position: absolute;
-    left: -12.5px;
-    bottom: 33%;
-    font-size: 1.1rem;
-    padding: 0 5px;
-}
-
-.btn__choix .fa-solid {
-    color: $color-grey;
-    margin: 0 2px 0 15px;
+    &__purple-dot {
+        display: inline-block;
+        background-color: $color-primary;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        color: $color-white;
+        line-height: 25px;
+        position: absolute;
+        left: -12.5px;
+        bottom: 33%;
+        font-size: 1.1rem;
+        padding: 0 5px;
+        text-align: center;
+    }
 }

@@ -105,3 +105,27 @@ footer .fa-solid {
     margin-right: 10px;
     font-size: 0.8rem;
 }
+
+@media screen and (min-width: 767.98px) {
+    .btns {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        column-gap: 20px;
+        justify-content: space-around;
+    }
+
+    .restaurants-cards {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1023.98px) {
+
+    .restaurants-cards {
+        display: grid;
+        grid-template-columns: 22% 22% 22% 22%;
+        justify-content: space-between;
+    }
+}
