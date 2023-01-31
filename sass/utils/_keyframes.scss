@@ -37,6 +37,23 @@
     }
 }
 
+// menus : apparition progressive des items entrées plats et desserts
+@keyframes appear-y {
+    0% {
+        opacity: 0;
+        transform: translateY(+20px);
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 // menus : décalage de la div "price" sur la gauche
 @keyframes anim-price {
     0% {

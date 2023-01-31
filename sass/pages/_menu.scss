@@ -14,41 +14,6 @@
     }
 }
 
-@mixin header-restaurant {
-    position: relative;
-    margin: 0 0;
-    width: 100%;
-    height: 290px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: $color-white;
-
-    &__title {
-        position: absolute;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        background: $bg-color-secondary;
-        bottom: 0;
-        padding: 30px 20px;
-        border-radius: 30px 30px 0 0;
-
-        h1 {
-            font-family: $font-primary;
-            font-size: 1.9rem;
-            margin-top: 0px;
-            margin-bottom: 0px;
-
-        }
-
-        .fa-heart {
-            font-size: 1.5rem;
-        }
-    }
-}
-
 .header-restaurant {
     background-image: url(../../public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     @include header-restaurant;
@@ -112,24 +77,6 @@
     animation-delay: 1700ms;
 }
 
-
-
-@keyframes appear-y {
-    0% {
-        opacity: 0;
-        transform: translateY(+20px);
-    }
-
-    50% {
-        opacity: 0.3;
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
 .commande {
     display: flex;
     flex-direction: column;
@@ -158,6 +105,23 @@
 
     .header-restaurant {
         height: 390px;
+
+        &__1 {
+            height: 390px;
+        }
+
+        &__2 {
+            height: 390px;
+        }
+
+        &__3 {
+            height: 390px;
+        }
+
+        &__4 {
+            height: 390px;
+        }
+
     }
 
 }
@@ -173,5 +137,25 @@
 
     .header-restaurant {
         height: 500px;
+
+        &__1 {
+            height: 500px;
+        }
+
+        &__2 {
+            height: 500px;
+        }
+
+        &__3 {
+            height: 500px;
+        }
+
+        &__4 {
+            height: 500px;
+        }
+    }
+
+    .commande .btn {
+        margin: 0 auto;
     }
 }

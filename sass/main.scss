@@ -70,7 +70,7 @@ main {
     margin: 20px 0 40px 0;
 }
 
-.restaurants-cards {
+.cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,7 +114,7 @@ footer .fa-solid {
         justify-content: space-around;
     }
 
-    .restaurants-cards {
+    .cards {
         display: grid;
         grid-template-columns: 48% 48%;
         justify-content: space-around;
@@ -123,9 +123,48 @@ footer .fa-solid {
 
 @media screen and (min-width: 1023.98px) {
 
-    .restaurants-cards {
+    .cards {
         display: grid;
         grid-template-columns: 22% 22% 22% 22%;
         justify-content: space-between;
     }
+
+    .explo-fonctionnement {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        justify-content: center;
+        background-color: $bg-color-secondary;
+    }
+
+    .exploration,
+    .fonctionnement {
+        margin-top: 20px;
+        padding: 50px 50px;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn {
+        margin: 20px 0px;
+        max-width: 520px;
+    }
+
+    .btn__choix {
+        background-color: $color-white;
+    }
+
+    .restaurants {
+        padding: 20px 50px;
+    }
+
+    footer {
+        padding: 20px 50px;
+    }
+
+
 }

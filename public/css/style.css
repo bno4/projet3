@@ -39,6 +39,19 @@ body {
     transform: scale(1);
   }
 }
+@keyframes appear-y {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 @keyframes anim-price {
   0% {
     transform: translateX(0px);
@@ -562,19 +575,6 @@ body {
   transition: all 600ms;
 }
 
-@keyframes appear-y {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  50% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
 .commande {
   display: flex;
   flex-direction: column;
@@ -601,6 +601,18 @@ body {
   .header-restaurant {
     height: 390px;
   }
+  .header-restaurant__1 {
+    height: 390px;
+  }
+  .header-restaurant__2 {
+    height: 390px;
+  }
+  .header-restaurant__3 {
+    height: 390px;
+  }
+  .header-restaurant__4 {
+    height: 390px;
+  }
 }
 @media screen and (min-width: 1023.98px) {
   .menus-restaurants {
@@ -611,6 +623,21 @@ body {
   }
   .header-restaurant {
     height: 500px;
+  }
+  .header-restaurant__1 {
+    height: 500px;
+  }
+  .header-restaurant__2 {
+    height: 500px;
+  }
+  .header-restaurant__3 {
+    height: 500px;
+  }
+  .header-restaurant__4 {
+    height: 500px;
+  }
+  .commande .btn {
+    margin: 0 auto;
   }
 }
 body {
@@ -818,6 +845,7 @@ footer {
   background: linear-gradient(to bottom, #9356DC, #FF79DA);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
   opacity: 0;
 }
 .heart__filled:hover {
@@ -886,7 +914,7 @@ main {
   margin: 20px 0 40px 0;
 }
 
-.restaurants-cards {
+.cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -928,17 +956,47 @@ footer .fa-solid {
     column-gap: 20px;
     justify-content: space-around;
   }
-  .restaurants-cards {
+  .cards {
     display: grid;
     grid-template-columns: 48% 48%;
     justify-content: space-around;
   }
 }
 @media screen and (min-width: 1023.98px) {
-  .restaurants-cards {
+  .cards {
     display: grid;
     grid-template-columns: 22% 22% 22% 22%;
     justify-content: space-between;
+  }
+  .explo-fonctionnement {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-content: center;
+    background-color: #F5F5F5;
+  }
+  .exploration,
+  .fonctionnement {
+    margin-top: 20px;
+    padding: 50px 50px;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .btns {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn {
+    margin: 20px 0px;
+    max-width: 520px;
+  }
+  .btn__choix {
+    background-color: #fff;
+  }
+  .restaurants {
+    padding: 20px 50px;
+  }
+  footer {
+    padding: 20px 50px;
   }
 }
 

@@ -61,6 +61,7 @@
         background: linear-gradient(to bottom, $color-primary, $color-secondary);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
+        background-clip: text;
         opacity: 0;
 
         &:hover {
