@@ -9,10 +9,36 @@
 body {
   box-sizing: border-box;
   background-color: #fff;
-  max-width: 992px;
   margin: 0 auto !important;
 }
 
+@keyframes opacity {
+  from {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
 @keyframes anim-price {
   0% {
     transform: translateX(0px);
@@ -517,16 +543,6 @@ footer {
   opacity: 0;
 }
 
-@keyframes opacity {
-  from {
-    opacity: 0;
-    transform: translateY(0px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
 .loader {
   width: 100%;
   height: 100%;
@@ -538,18 +554,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loader 4s 0ms forwards;
+  animation: loader 2s 0ms forwards;
 }
 
-@keyframes loader {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
 .spinner {
   margin: 100px auto 0;
   width: 170px;
@@ -575,14 +582,6 @@ footer {
   background-color: #9356DC;
 }
 
-@keyframes sk-bouncedelay {
-  0%, 80%, 100% {
-    transform: scale(0);
-  }
-  40% {
-    transform: scale(1);
-  }
-}
 .btn {
   padding: 20px;
   margin: 0 auto;
