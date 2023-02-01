@@ -7,3 +7,7 @@ $color-grey: #848484;
 $bg-color-secondary: #F5F5F5;
 $font-primary: Shrikhand, recursive;
 $font-secondary: Roboto, sans-serif;
+// boucle @for apparition des entrée plats desserts
+$num-choices: 4;
+$anim-dur: 1500ms;
+$anim-delay: calc($anim-dur / $num-choices);

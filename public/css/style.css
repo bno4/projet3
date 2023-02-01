@@ -41,11 +41,8 @@ body {
 }
 @keyframes appear-y {
   0% {
-    opacity: 0;
+    opacity: 0.2;
     transform: translateY(20px);
-  }
-  50% {
-    opacity: 0.3;
   }
   100% {
     opacity: 1;
@@ -238,10 +235,20 @@ body {
   border-radius: 15px;
   padding: 10px 20px;
   box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  animation: appear-y forwards ease-in-out;
-  animation-duration: 900ms;
-  animation-delay: 1000ms;
+  opacity: 0.3;
+  animation: appear-y 1500ms forwards;
+}
+.choice--1 {
+  animation-delay: 375ms;
+}
+.choice--2 {
+  animation-delay: 750ms;
+}
+.choice--3 {
+  animation-delay: 1125ms;
+}
+.choice--4 {
+  animation-delay: 1500ms;
 }
 .choice:hover .choice__price {
   animation: anim-price 600ms forwards;
@@ -309,267 +316,6 @@ body {
   transform: translateX(80px);
 }
 .choice__check .fa-circle-check {
-  color: #fff;
-  font-size: 1.5rem;
-  transition: all 600ms;
-}
-
-.choice-1 {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  justify-content: space-between;
-  width: 100%;
-  overflow: hidden;
-  background-color: #fff;
-  border-radius: 15px;
-  padding: 10px 20px;
-  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  animation: appear-y forwards ease-in-out;
-  animation-duration: 900ms;
-  animation-delay: 1300ms;
-}
-.choice-1:hover .choice__price {
-  animation: anim-price 600ms forwards;
-}
-.choice-1:hover .choice__check {
-  animation: anim-check 600ms forwards;
-}
-.choice-1:hover .fa-circle-check {
-  transform: rotate(360deg);
-}
-.choice-1:hover .choice__item {
-  margin-right: 100px;
-}
-.choice-1__item {
-  display: flex;
-  flex-direction: column;
-  padding-right: 10px;
-  cursor: pointer;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 90%;
-  transition: all 600ms;
-}
-.choice-1__item h3 {
-  font-size: 1rem;
-  font-weight: 400;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.choice-1__item p {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.choice-1__price {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  font-weight: 400;
-  background-color: white;
-  position: absolute;
-  right: 0px;
-  height: 100%;
-  width: 10%;
-  top: 0;
-  padding: 10px;
-  margin-left: 10px;
-  border-radius: 0 15px 15px 0;
-  cursor: pointer;
-  transform: translateX(0);
-}
-.choice-1__check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 80px;
-  height: 100%;
-  right: 0;
-  top: 0px;
-  border-radius: 0 15px 15px 0;
-  background-color: #99e2d0;
-  transform: translateX(80px);
-}
-.choice-1__check .fa-circle-check {
-  color: #fff;
-  font-size: 1.5rem;
-  transition: all 600ms;
-}
-
-.choice-2 {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  justify-content: space-between;
-  width: 100%;
-  overflow: hidden;
-  background-color: #fff;
-  border-radius: 15px;
-  padding: 10px 20px;
-  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  animation: appear-y forwards ease-in-out;
-  animation-duration: 900ms;
-  animation-delay: 1500ms;
-}
-.choice-2:hover .choice__price {
-  animation: anim-price 600ms forwards;
-}
-.choice-2:hover .choice__check {
-  animation: anim-check 600ms forwards;
-}
-.choice-2:hover .fa-circle-check {
-  transform: rotate(360deg);
-}
-.choice-2:hover .choice__item {
-  margin-right: 100px;
-}
-.choice-2__item {
-  display: flex;
-  flex-direction: column;
-  padding-right: 10px;
-  cursor: pointer;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 90%;
-  transition: all 600ms;
-}
-.choice-2__item h3 {
-  font-size: 1rem;
-  font-weight: 400;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.choice-2__item p {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.choice-2__price {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  font-weight: 400;
-  background-color: white;
-  position: absolute;
-  right: 0px;
-  height: 100%;
-  width: 10%;
-  top: 0;
-  padding: 10px;
-  margin-left: 10px;
-  border-radius: 0 15px 15px 0;
-  cursor: pointer;
-  transform: translateX(0);
-}
-.choice-2__check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 80px;
-  height: 100%;
-  right: 0;
-  top: 0px;
-  border-radius: 0 15px 15px 0;
-  background-color: #99e2d0;
-  transform: translateX(80px);
-}
-.choice-2__check .fa-circle-check {
-  color: #fff;
-  font-size: 1.5rem;
-  transition: all 600ms;
-}
-
-.choice-3 {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  justify-content: space-between;
-  width: 100%;
-  overflow: hidden;
-  background-color: #fff;
-  border-radius: 15px;
-  padding: 10px 20px;
-  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  animation: appear-y forwards ease-in-out;
-  animation-duration: 900ms;
-  animation-delay: 1700ms;
-}
-.choice-3:hover .choice__price {
-  animation: anim-price 600ms forwards;
-}
-.choice-3:hover .choice__check {
-  animation: anim-check 600ms forwards;
-}
-.choice-3:hover .fa-circle-check {
-  transform: rotate(360deg);
-}
-.choice-3:hover .choice__item {
-  margin-right: 100px;
-}
-.choice-3__item {
-  display: flex;
-  flex-direction: column;
-  padding-right: 10px;
-  cursor: pointer;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 90%;
-  transition: all 600ms;
-}
-.choice-3__item h3 {
-  font-size: 1rem;
-  font-weight: 400;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.choice-3__item p {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.choice-3__price {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  font-weight: 400;
-  background-color: white;
-  position: absolute;
-  right: 0px;
-  height: 100%;
-  width: 10%;
-  top: 0;
-  padding: 10px;
-  margin-left: 10px;
-  border-radius: 0 15px 15px 0;
-  cursor: pointer;
-  transform: translateX(0);
-}
-.choice-3__check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 80px;
-  height: 100%;
-  right: 0;
-  top: 0px;
-  border-radius: 0 15px 15px 0;
-  background-color: #99e2d0;
-  transform: translateX(80px);
-}
-.choice-3__check .fa-circle-check {
   color: #fff;
   font-size: 1.5rem;
   transition: all 600ms;
