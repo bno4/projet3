@@ -63,7 +63,7 @@ main {
     gap: 20px;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin: 30px 0px 0px 10px;
 }
 
 .restaurants {
@@ -106,7 +106,8 @@ footer .fa-solid {
     font-size: 0.8rem;
 }
 
-@media screen and (min-width: 767.98px) {
+// design tablette > 768px
+@media screen and (min-width: 768px) {
     .btns {
         display: grid;
         grid-template-columns: 30% 30% 30%;
@@ -121,7 +122,8 @@ footer .fa-solid {
     }
 }
 
-@media screen and (min-width: 1023.98px) {
+// design desktop > 1024px
+@media screen and (min-width: 1024px) {
 
     .cards {
         display: grid;

@@ -82,7 +82,6 @@
     }
 
     &:hover .choice__check {
-
         animation: anim-check 600ms forwards;
     }
 
@@ -181,14 +180,12 @@
     min-width: 200px;
 }
 
-//design tablette >767.98px
-@media screen and (min-width:765.98px) {
+//design tablette >768px
+@media screen and (min-width:768px) {
     .menus-restaurants {
         display: grid;
+        grid-template-columns: 33% 33% 33%;
         background-color: $bg-color-secondary;
-        grid-template-columns: 48% 48%;
-        align-items: baseline;
-        justify-content: space-around;
     }
 
     .header-restaurant {
@@ -214,8 +211,8 @@
 
 }
 
-//design desktop >1023.98px
-@media screen and (min-width:1023.98px) {
+//design desktop >1024px
+@media screen and (min-width:1024px) {
     .menus-restaurants {
         display: grid;
         background-color: $bg-color-secondary;

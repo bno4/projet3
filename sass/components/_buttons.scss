@@ -2,6 +2,7 @@
 .btn {
     padding: 20px;
     margin: 0 auto;
+    width: 100%;
     max-width: 290px;
     @include border;
     @include btn-shadow;
@@ -12,10 +13,10 @@
     transition: all 400ms;
 
     &:hover {
-        background: linear-gradient(-10deg, lighten($color-primary, 2%)0%,
+        background: linear-gradient(-10deg, lighten($color-primary, 3%)0%,
                 lighten($color-secondary, 2%)100%,
             );
-        box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
     }
 
     //boutons section "fonctionnement"
@@ -47,12 +48,12 @@
         &__txt {
             display: flex;
             justify-content: space-between;
-            align-items: baseline;
+            align-items: center;
 
             .fa-solid {
                 display: inline-block;
                 color: $color-grey;
-                margin: 0 10px 0px 25px;
+                margin: 0 15px 0px 25px;
             }
 
         }

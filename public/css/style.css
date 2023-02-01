@@ -336,13 +336,11 @@ body {
   min-width: 200px;
 }
 
-@media screen and (min-width: 765.98px) {
+@media screen and (min-width: 768px) {
   .menus-restaurants {
     display: grid;
+    grid-template-columns: 33% 33% 33%;
     background-color: #F5F5F5;
-    grid-template-columns: 48% 48%;
-    align-items: baseline;
-    justify-content: space-around;
   }
   .header-restaurant {
     height: 390px;
@@ -360,7 +358,7 @@ body {
     height: 390px;
   }
 }
-@media screen and (min-width: 1023.98px) {
+@media screen and (min-width: 1024px) {
   .menus-restaurants {
     display: grid;
     background-color: #F5F5F5;
@@ -469,6 +467,7 @@ footer {
 .btn {
   padding: 20px;
   margin: 0 auto;
+  width: 100%;
   max-width: 290px;
   border: 0px solid #FF79DA;
   border-radius: 50px;
@@ -480,8 +479,8 @@ footer {
   transition: all 400ms;
 }
 .btn:hover {
-  background: linear-gradient(-10deg, #985ede 0%, #ff83dd 100%);
-  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(-10deg, #9b63df 0%, #ff83dd 100%);
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
 }
 .btn__choix {
   display: flex;
@@ -509,12 +508,12 @@ footer {
 .btn__choix__txt {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 .btn__choix__txt .fa-solid {
   display: inline-block;
   color: #848484;
-  margin: 0 10px 0px 25px;
+  margin: 0 15px 0px 25px;
 }
 .btn__purple-dot {
   display: inline-block;
@@ -653,7 +652,7 @@ main {
   gap: 20px;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin: 30px 0px 0px 10px;
 }
 
 .restaurants {
@@ -695,7 +694,7 @@ footer .fa-solid {
   font-size: 0.8rem;
 }
 
-@media screen and (min-width: 767.98px) {
+@media screen and (min-width: 768px) {
   .btns {
     display: grid;
     grid-template-columns: 30% 30% 30%;
@@ -708,7 +707,7 @@ footer .fa-solid {
     justify-content: space-around;
   }
 }
-@media screen and (min-width: 1023.98px) {
+@media screen and (min-width: 1024px) {
   .cards {
     display: grid;
     grid-template-columns: 22% 22% 22% 22%;
