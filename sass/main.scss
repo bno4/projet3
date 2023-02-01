@@ -7,14 +7,9 @@
 @import "./components/loader";
 @import "./components/buttons";
 @import "./layout/card";
+@import "./layout/header";
 
-header {
-    margin: 0 0 5px 0;
-    padding: 20px;
-    box-shadow: 0px 3px 8px #999;
-    background-color: $color-white;
-    text-align: center;
-}
+
 
 .exploration {
     display: flex;
@@ -68,16 +63,18 @@ main {
 
 .restaurants {
     margin: 20px 0 40px 0;
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 30px;
+    }
 }
 
-.cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 30px;
-}
+
 
 footer {
     display: flex;
@@ -116,7 +113,7 @@ footer .fa-solid {
         justify-content: space-around;
     }
 
-    .cards {
+    .restaurants__cards {
         display: grid;
         grid-template-columns: 48% 48%;
         justify-content: space-around;
@@ -125,7 +122,7 @@ footer .fa-solid {
 
 @media screen and (min-width: 1023.98px) {
 
-    .cards {
+    .restaurants__cards {
         display: grid;
         grid-template-columns: 22% 22% 22% 22%;
         justify-content: space-between;

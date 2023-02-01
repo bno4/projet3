@@ -1,0 +1,25 @@
+// header logo index.html
+header {
+    margin: 0 0 5px 0;
+    padding: 20px;
+    box-shadow: 0px 3px 8px #999;
+    background-color: $color-white;
+    text-align: center;
+}
+
+// header logo menu1 à 4.html
+.header-menu {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0;
+
+    a {
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        color: $color-main;
+        font-size: 1.4rem;
+    }
+}
