@@ -945,8 +945,10 @@ footer h1 {
 }
 
 footer .fa-solid {
-  margin-right: 10px;
-  font-size: 0.8rem;
+  display: inline-block;
+  width: 20px;
+  margin-right: 5px;
+  font-size: 0.9rem;
 }
 
 @media screen and (min-width: 767.98px) {
