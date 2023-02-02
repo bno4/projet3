@@ -513,8 +513,15 @@ header {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.header-restaurant__title .fa-heart {
-  font-size: 1.5rem;
+.header-restaurant__title .heart {
+  font-size: 1.6rem;
+  top: 33px;
+  right: 25px;
+}
+.header-restaurant__title .heart__filled {
+  font-size: 1.6rem;
+  top: 33px;
+  right: 25px;
 }
 .header-restaurant__2 {
   background-image: url(../../public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
@@ -544,8 +551,15 @@ header {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.header-restaurant__2__title .fa-heart {
-  font-size: 1.5rem;
+.header-restaurant__2__title .heart {
+  font-size: 1.6rem;
+  top: 33px;
+  right: 25px;
+}
+.header-restaurant__2__title .heart__filled {
+  font-size: 1.6rem;
+  top: 33px;
+  right: 25px;
 }
 .header-restaurant__3 {
   background-image: url(../../public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
@@ -575,8 +589,15 @@ header {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.header-restaurant__3__title .fa-heart {
-  font-size: 1.5rem;
+.header-restaurant__3__title .heart {
+  font-size: 1.6rem;
+  top: 33px;
+  right: 25px;
+}
+.header-restaurant__3__title .heart__filled {
+  font-size: 1.6rem;
+  top: 33px;
+  right: 25px;
 }
 .header-restaurant__4 {
   background-image: url(../../public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
@@ -606,8 +627,15 @@ header {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.header-restaurant__4__title .fa-heart {
-  font-size: 1.5rem;
+.header-restaurant__4__title .heart {
+  font-size: 1.6rem;
+  top: 33px;
+  right: 25px;
+}
+.header-restaurant__4__title .heart__filled {
+  font-size: 1.6rem;
+  top: 33px;
+  right: 25px;
 }
 
 footer {
