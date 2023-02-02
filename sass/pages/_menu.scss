@@ -30,7 +30,7 @@
         transition: all 500ms;
         cursor: pointer;
 
-        &:hover {
+        &:active {
             transform: translateX(50px);
         }
     }
@@ -52,7 +52,8 @@
     border-radius: 15px;
     padding: 10px 20px;
     @include btn-shadow;
-    opacity: 0.3;
+    opacity: 0.2;
+    transform: translateY(10px);
     animation: appear-y $anim-dur forwards;
 
     @for $i from 1 through $num-choices {

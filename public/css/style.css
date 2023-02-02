@@ -26,6 +26,9 @@ body {
   0% {
     opacity: 1;
   }
+  30%, 70% {
+    opacity: 1;
+  }
   100% {
     opacity: 0;
     visibility: hidden;
@@ -42,7 +45,7 @@ body {
 @keyframes appear-y {
   0% {
     opacity: 0.2;
-    transform: translateY(20px);
+    transform: translateY(10px);
   }
   100% {
     opacity: 1;
@@ -201,7 +204,7 @@ body {
   transition: all 500ms;
   cursor: pointer;
 }
-.menu h2:hover {
+.menu h2:active {
   transform: translateX(50px);
 }
 .menu span {
@@ -220,7 +223,8 @@ body {
   border-radius: 15px;
   padding: 10px 20px;
   box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2);
-  opacity: 0.3;
+  opacity: 0.2;
+  transform: translateY(10px);
   animation: appear-y 1500ms forwards;
 }
 .choice--1 {
@@ -403,25 +407,20 @@ textarea {
   font-weight: 400;
 }
 
-header,
-main,
-footer {
-  animation: opacity 1s 1000ms forwards;
-  opacity: 0;
-}
-
 .loader {
   width: 100%;
   height: 100%;
   background-color: #fff;
-  position: absolute;
-  margin: auto auto;
+  position: fixed;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loader 2s 0ms forwards;
+  animation: loader 3s ease-in-out forwards;
+  z-index: 10;
 }
 
 .spinner {
@@ -436,7 +435,8 @@ footer {
   background-color: black;
   border-radius: 100%;
   display: inline-block;
-  animation: sk-bouncedelay 1.5s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.5s ease-in-out;
+  animation-iteration-count: 4;
 }
 
 .spinner .bounce1 {
