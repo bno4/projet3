@@ -11,3 +11,8 @@ body {
     background-color: $color-white;
     margin: 0 auto !important;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+}

@@ -7,7 +7,7 @@ header {
     text-align: center;
 }
 
-// header logo menu1 à 4.html
+// header logo des pages 1 à 4.html
 .header-menu {
     display: flex;
     position: relative;
@@ -22,4 +22,26 @@ header {
         color: $color-main;
         font-size: 1.4rem;
     }
+}
+
+// header de chaque restaurant avec différentes photos en arrière plan
+.header-restaurant {
+    background-image: url(../../public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    @include header-restaurant;
+
+    &__2 {
+        background-image: url(../../public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+        @include header-restaurant;
+    }
+
+    &__3 {
+        background-image: url(../../public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+        @include header-restaurant;
+    }
+
+    &__4 {
+        background-image: url(../../public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+        @include header-restaurant;
+    }
+
 }
