@@ -30,69 +30,8 @@
     width: 100%;
     padding: 30px 30px;
     background-color: $bg-color-secondary;
-}
 
-//design tablette >768px
-@media screen and (min-width:768px) {
-    .menus-restaurants {
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-        background-color: $bg-color-secondary;
-    }
-
-    .header-restaurant {
-        height: 390px;
-
-        &__1 {
-            height: 390px;
-        }
-
-        &__2 {
-            height: 390px;
-        }
-
-        &__3 {
-            height: 390px;
-        }
-
-        &__4 {
-            height: 390px;
-        }
-
-    }
-
-}
-
-//design desktop >1024px
-@media screen and (min-width:1024px) {
-    .menus-restaurants {
-        display: grid;
-        background-color: $bg-color-secondary;
-        grid-template-columns: 33% 33% 33%;
-        justify-content: space-around;
-    }
-
-    .header-restaurant {
-        height: 400px;
-
-        &__1 {
-            height: 400px;
-        }
-
-        &__2 {
-            height: 400px;
-        }
-
-        &__3 {
-            height: 400px;
-        }
-
-        &__4 {
-            height: 400px;
-        }
-    }
-
-    .commande .btn {
-        margin: 0 auto;
+    .btn {
+        max-width: 200px;
     }
 }
