@@ -18,9 +18,12 @@
     // desgin tablette du menu
     .menus-restaurants {
         display: grid;
-        grid-template-columns: 33% 33% 33%;
+        grid-template-columns: 1fr;
         background-color: $bg-color-secondary;
+        padding-left: 80px;
+        padding-right: 80px;
     }
+
 
     .header-restaurant {
         height: 400px;
@@ -57,6 +60,10 @@
         padding: 50px 50px;
         justify-content: flex-start;
         text-align: left;
+
+        h1 {
+            padding: 0 0;
+        }
     }
 
     .btns {
@@ -67,12 +74,14 @@
     .btn {
         display: flex;
         justify-content: center;
-        margin: 20px 0;
+        margin: 10px 0;
         max-width: 520px;
+        padding: 20px;
     }
 
     .btn__choix {
-        background-color: $color-white;
+        background-color: lighten($bg-color-secondary, 1%);
+        padding: 10px 0;
     }
 
     .restaurants__cards {
@@ -94,6 +103,8 @@
         background-color: $bg-color-secondary;
         grid-template-columns: 33% 33% 33%;
         justify-content: space-around;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .header-restaurant {
